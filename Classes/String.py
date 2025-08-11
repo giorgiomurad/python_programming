@@ -7,16 +7,18 @@ print(", ".join(["spam", "eggs", "ham"]))        # spam, eggs, ham
 # 2. Replaces one substring in a string with another
 print("Hello ME".replace("ME", "World"))         # Hello World
 
+# 3. Returns the index in the string where the given substring is found. The function returns -1 if the substring is not found in the string
+print("Hello World".find("llo"))                # 2
 
-# 3. Boolean function that returns True if 'str' starts with 'str1'. False otherwise
+# 4. Boolean function that returns True if 'str' starts with 'str1'. False otherwise
 print("This is a sentence.".startswith("This"))  # True
 
 
-# 4. Boolean function that returns True if 'str' ends with 'str1'. False otherwise
+# 5. Boolean function that returns True if 'str' ends with 'str1'. False otherwise
 print("This is a sentence.".endswith("sentence"))# True
 
 
-# 5. Returns a string with all characters capitalized
+# 6. Returns a string with all characters capitalized
 print("This is a sentence.".upper())             # THIS IS A SENTENCE
 
 
@@ -24,7 +26,7 @@ print("This is a sentence.".upper())             # THIS IS A SENTENCE
 print("AN ALL CAPS SENTENCE".lower())            # an all caps sentence
 
 
-# 7. opposite to join, turns a string with a certain separator into a list
+# 7. opposite to join, turns a string with a certain separator into a list, and returns the list
 print("spam, eggs, ham".split(", "))             # ["spam", "eggs", "ham"]
 
 
@@ -61,6 +63,22 @@ print(len(str))             # 3
 
 
 # 14. [str].strip()
-# Removes spaces from both sides of the string
+# Returns the string where white spaces are removed from both sides of the string
 str = "              FINAL           "
-print(str.strip())
+print(str.strip() + '5')                # FINAL5
+
+# 15. [str].lstrip
+# Returns a string with all leading white spaces removed from the string
+str = "              FINAL           "
+print(str.lstrip() + '5')               # FINAL           5
+
+# 16. [str].rstrip
+# Returns a string with all tailing white spaces removed from the string
+str = "              FINAL           "
+print(str.rstrip() + '5')               #               FINAL5
+
+# 17. [str].strip(char)
+# Returns a string where the instances of char are removed from both sides of the string
+
+# 18. [str].lstrip(char)
+# 19. [str].rstrip(char)
